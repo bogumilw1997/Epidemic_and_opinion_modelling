@@ -1,0 +1,21 @@
+{
+    "save_path_local":"praca_mgr/programy7_simple/both_ADN/output/",
+    "save_path_serwer":"/home/bwierzchowski/COVID_modeling/programy/new_model/both_ADN/output/",
+    "N":10000,
+    "m":5,
+    "T":81,
+    "p0_inf":0.01,
+    "p0_op_minus":0.33,
+    "p0_op_plus":0.33,
+    "beta":0.2,
+    "omega":0.8,
+    "gamma":0.1,
+    "kappa":0.05,
+    "mu":0.05,
+    "phi":0.02,
+    "eta":30,
+    "epsilon":0.001,
+    "w":2.1,
+    "v_step":1,
+    "realizations":10
+}
