@@ -14,3 +14,22 @@ For epidemic and opinion spreading I'm using complex network topology, handled b
 - `temporal` folder contains code used for simulations done on temporal networks (conections between nodes change with time, here I'm using the Activity Driven Network model)
    * `basic` folder contains the baseline version of the model
    * `lower_inf_act` folder contains the baseline version of the model with added lower activity for infected nodes
+## Parameters
+
+In each folder, file `params.json` controls the parameters of the simulation.
+
+* `N` controls the number of nodes at both epidemic and opinion level
+* `m` is the number of nodes added at each construction step of the BA network
+* `T` is the number of Monte Carlo simulation steps 
+* `p0_inf` is the probability that the node will be infected at T=0
+* `p0_op_minus` is the probability that the node will havr -1 opinion at T=0
+* `p0_op_plus` is the probability that the node will have +1 opinion at T=0
+* `beta` is the epidemic spread rate
+* `omega` is the recovery probability
+* `mu` is the probability of returning to the S/V state
+* `waning_time` is the time after which the vaccine stops protecting against the infection
+* `vacc_death_prob` is the probability of the agent dying from infection after beeing vaccinated
+* `v_step` is the amount of the opinion simulation steps per epidemic step
+* `vacc_start` is the first simulation step at which agents can be vaccinated
+* `vacc_limit` is teh maximum relative number of the agents  that can be vaccinated per 1 simulation step
+* `realizations` is the number of the MC simulatuon realizations per 1 parameters set
